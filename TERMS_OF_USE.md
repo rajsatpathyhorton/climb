@@ -21,8 +21,11 @@ Access to this repository is restricted to approved collaborators who are direct
 For questions about access, permissions, or collaboration scope, please contact:
 
 Rajesh Satpathy-Horton
+
 Johns Hopkins University
+
 Department of Health Policy and Management
+
 rsatpat1@jh.edu
 
 ---
