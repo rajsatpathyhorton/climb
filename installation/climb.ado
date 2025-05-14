@@ -1,7 +1,8 @@
 *! CLIMB package v0.2 (05/14/2025)
 *! Rajesh Satpathy-Horton (rsatpat1@jh.edu)
 *! Written using StataNow 19.5
-*v0.2 (xx/xx/xxxx): [add updates]
+
+*v0.2 (05/14/2025): minor edits
 
 *-------------------------------------------------------*
 * Program initialization
@@ -264,4 +265,5 @@ program define climb
 		di as error "Task '`task'' not recognized. Available options include: phq9, gad7, ptsd"
 		exit 198
 	}
+
 end
