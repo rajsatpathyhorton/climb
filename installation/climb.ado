@@ -15,16 +15,25 @@ program define climb
 *--------------------------*
 * Input validation
 *--------------------------*	
+	// list of valid tasks
+	local valid_tasks "phq gad ptsd"
+	
 	// Handle empty arg
     if "`task'" == "" {
         di as error "You must specify a task. Example: climb phq9"
         exit 198
     }
+	// Handle unsupported tasks
+	qui levelsof valid_tasks, local(check)
+	if !inlist("`task'","phq","gad","ptsd") {
+		di as error "Not a valid argument. Valid args include: phq, gad, ptsd."
+		exit 198
+	}
 
 	*-------------------------------------------------------*
 	* PHQ-9 variable generation
 	*-------------------------------------------------------*
-	if "`task'" == "phq9" {
+	if "`task'" == "phq" {
 		*--------------------------*
 		* Wave-by-wave missingness
 		*--------------------------*
@@ -94,7 +103,7 @@ program define climb
 	*-------------------------------------------------------*
 	* GAD-7 variable generation
 	*-------------------------------------------------------*
-	if "`task'"=="gad7" {
+	if "`task'"=="gad" {
 		* Note: Partially complete responses are not set to missing. 
 		forval i=1/4 {
 			di as red `"Missing values in Wave `i' GAD-7 survey."'
@@ -256,14 +265,6 @@ program define climb
 			la val PTSD5_binary_T`i' PTSD5_lab
 			la var PTSD5_binary_T`i' `"Wave `i' Binary PC-PTSD-5"'
 		}
-	}
-
-	*-------------------------------------------------------*
-	* Handling unsupported tasks
-	*-------------------------------------------------------*
-	else {
-		di as error "Task '`task'' not recognized. Available options include: phq9, gad7, ptsd"
-		exit 198
 	}
 
 end
