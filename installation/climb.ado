@@ -15,9 +15,6 @@ program define climb
 *--------------------------*
 * Input validation
 *--------------------------*	
-	// list of valid tasks
-	local valid_tasks "phq gad ptsd"
-	
 	// Handle empty arg
     if "`task'" == "" {
         di as error "You must specify a task. Example: climb phq9"
