@@ -20,6 +20,7 @@ program define climb
         di as error "You must specify a task. Example: climb phq9"
         exit 198
     }
+
 	// Handle unsupported tasks
 	if !inlist("`task'","phq","gad","ptsd") {
 		di as error "Not a valid argument. Valid args include: phq, gad, ptsd."
