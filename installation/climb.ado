@@ -264,3 +264,4 @@ program define climb
 		di as error "Task '`task'' not recognized. Available options include: phq9, gad7, ptsd"
 		exit 198
 	}
+end
