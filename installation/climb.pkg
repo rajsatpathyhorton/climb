@@ -1,0 +1,12 @@
+v 1.8
+d A Stata package for the CLIBM study.
+d
+d Distribution-Date: 20250514
+d
+d This  version: 14 May 2025
+d First version: 14 May 2025
+d
+d Author: Rajesh Satpathy-Horton (rsatpat1@jh.edu)
+d
+f climb.ado
+
