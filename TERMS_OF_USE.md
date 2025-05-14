@@ -20,13 +20,11 @@ Access to this repository is restricted to approved collaborators who are direct
 
 For questions about access, permissions, or collaboration scope, please contact:
 
-Rajesh Satpathy-Horton
+Dr. Catherine Ettman - cettman1@jhu.edu
 
-Johns Hopkins University
+or
 
-Department of Health Policy and Management
-
-rsatpat1@jh.edu
+Rajesh Satpathy-Horton - rsatpat1@jh.edu
 
 ---
 
