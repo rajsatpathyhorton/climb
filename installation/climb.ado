@@ -1,8 +1,8 @@
-*! CLIMB package v0.2 (05/14/2025)
+*! CLIMB package v0.12 (05/14/2025)
 *! Rajesh Satpathy-Horton (rsatpat1@jh.edu)
 *! Written using StataNow 19.5
 
-*v0.2 (05/14/2025): minor edits
+*v0.12 (05/14/2025): minor edits
 
 *-------------------------------------------------------*
 * Program initialization
