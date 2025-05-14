@@ -21,7 +21,6 @@ program define climb
         exit 198
     }
 	// Handle unsupported tasks
-	qui levelsof valid_tasks, local(check)
 	if !inlist("`task'","phq","gad","ptsd") {
 		di as error "Not a valid argument. Valid args include: phq, gad, ptsd."
 		exit 198
